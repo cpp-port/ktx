@@ -1,0 +1,4 @@
+[submodule "KTX-Software"]
+	path = KTX-Software
+	url = ../../KhronosGroup/KTX-Software
+	branch = main
