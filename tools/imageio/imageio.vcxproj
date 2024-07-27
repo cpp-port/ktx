@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{449705F9-BCA9-3094-ADF7-757A57E54409}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>imageio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\main\port\graphics3d\ktx\tools\imageio\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">imageio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">imageio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\main\port\graphics3d\ktx\tools\imageio\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">imageio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">imageio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\main\port\graphics3d\ktx\tools\imageio\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">imageio.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">imageio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\main\port\graphics3d\ktx\tools\imageio\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">imageio.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">imageio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/astc-encoder/Source/ThirdParty" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/basisu" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/dfdutils" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>StdCall</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;DEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/astc-encoder/Source/ThirdParty" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/basisu" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/dfdutils" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/astc-encoder/Source/ThirdParty" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/basisu" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/dfdutils" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/astc-encoder/Source/ThirdParty" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/basisu" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/dfdutils" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\.;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tools/imageio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/main/port/graphics3d/ktx/KTX-Software -BC:/main/port/graphics3d/ktx --check-stamp-file C:/main/port/graphics3d/ktx/tools/imageio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\main\port\graphics3d\ktx\tools\imageio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tools/imageio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/main/port/graphics3d/ktx/KTX-Software -BC:/main/port/graphics3d/ktx --check-stamp-file C:/main/port/graphics3d/ktx/tools/imageio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\main\port\graphics3d\ktx\tools\imageio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tools/imageio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/main/port/graphics3d/ktx/KTX-Software -BC:/main/port/graphics3d/ktx --check-stamp-file C:/main/port/graphics3d/ktx/tools/imageio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\main\port\graphics3d\ktx\tools\imageio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tools/imageio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/main/port/graphics3d/ktx/KTX-Software -BC:/main/port/graphics3d/ktx --check-stamp-file C:/main/port/graphics3d/ktx/tools/imageio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\main\port\graphics3d\ktx\tools\imageio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\formatdesc.h" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\image.hpp" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imagecodec.hpp" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imagespan.hpp" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imageinput.cc" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imageio.cc" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imageio.h" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imageio_utility.h" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\imageoutput.cc" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source\ThirdParty\tinyexr.h" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\encoder\jpgd.cpp" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\encoder\jpgd.h" />
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\png.imageio\lodepng.h" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\exr.imageio\exrinput.cc" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\jpg.imageio\jpginput.cc" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\npbm.imageio\npbminput.cc" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\png.imageio\lodepng.cc" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\png.imageio\pnginput.cc" />
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio\png.imageio\pngoutput.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\main\port\graphics3d\ktx\ZERO_CHECK.vcxproj">
+      <Project>{87445F3A-4D4F-3FA7-AD77-CE7BC72AF041}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\main\port\graphics3d\ktx\external\fmt\fmt.vcxproj">
+      <Project>{49BE604A-FAC0-3C04-A232-2DD2F0E70B0D}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

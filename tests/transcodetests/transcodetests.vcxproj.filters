@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\tests\transcodetests\transcodetests.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\main\port\graphics3d\ktx\KTX-Software\tests\transcodetests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\main\port\graphics3d\ktx\tests\transcodetests\obj_tmp_basisu.dir\$(Configuration)\basisu_transcoder.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\main\port\graphics3d\ktx\tests\transcodetests\obj_tmp_basisu.dir\$(Configuration)\zstd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{93848F51-BC78-3AE4-8A46-234BB49F84A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{069367B4-DF7A-3E5B-9E17-64AC02E3D90E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

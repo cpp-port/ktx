@@ -1,0 +1,1 @@
+include("C:/main/port/graphics3d/ktx/tests/streamtests/streamtests[1]_include-${CTEST_CONFIGURATION_TYPE}.cmake")

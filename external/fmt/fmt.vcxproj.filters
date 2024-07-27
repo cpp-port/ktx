@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\src\format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\src\os.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\args.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\chrono.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\compile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\format-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\ostream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\printf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\ranges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\std.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include\fmt\xchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\README.rst" />
+    <None Include="C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\ChangeLog.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{59D44C7C-9998-36AE-83B2-DBC9503B86F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{069367B4-DF7A-3E5B-9E17-64AC02E3D90E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

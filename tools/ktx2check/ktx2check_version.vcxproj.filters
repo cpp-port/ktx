@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\main\port\graphics3d\ktx\CMakeFiles\0e98cbfefccc36462380c4adeee6d787\version.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\main\port\graphics3d\ktx\CMakeFiles\5ed52a96b5e4ae1357fb60ac0380bc53\ktx2check_version.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\main\port\graphics3d\ktx\KTX-Software\tools\ktx2check\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\main\port\graphics3d\ktx\tools\ktx2check\CMakeFiles\ktx2check_version" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DD35E1C2-3589-3102-9324-F3AF81E2A13A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
