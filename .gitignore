@@ -18,6 +18,8 @@ Makefile
 **/xcuserdata
 **/Generated Files
 **/doxygen.directory
+**/Debug
+**/*.dir
 .DS_Store
 ._.DS_Store
 *.suo
