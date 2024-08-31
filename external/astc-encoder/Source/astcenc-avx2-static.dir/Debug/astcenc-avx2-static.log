@@ -1,1 +1,61 @@
-﻿  astcenc-avx2-static.vcxproj -> C:\main\port\graphics3d\ktx\external\astc-encoder\Source\Debug\astcenc-avx2-static.lib
+﻿  Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/external/astc-encoder/Source/CMakeLists.txt
+  CMake is re-running because C:/main/port/graphics3d/ktx/external/astc-encoder/Source/CMakeFiles/generate.stamp dependency file is missing.
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.19045.
+  -- The C compiler identification is MSVC 19.41.34120.0
+  -- The CXX compiler identification is MSVC 19.41.34120.0
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  --   AVX2 backend     - ON
+  --   SSE4.1 backend   - OFF
+  --   SSE2 backend     - OFF
+  --   NEON backend     - OFF
+  --   NONE backend     - OFF
+  --   NATIVE backend   - OFF
+  --   Invariance       - ON
+  --   Shared libs      - OFF
+  --   Decompressor     - OFF
+  --   Diagnostics      - OFF
+  --   ASAN             - OFF
+  --   UBSAN            - OFF
+  --   Unit tests       - OFF
+  -- Version: 10.1.1
+  -- Build type: 
+  -- Looking for pthread.h
+  -- Looking for pthread.h - not found
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: C:/main/port/graphics3d/ktx
+  astcenc_averages_and_directions.cpp
+  astcenc_block_sizes.cpp
+  astcenc_color_quantize.cpp
+  astcenc_color_unquantize.cpp
+  astcenc_compress_symbolic.cpp
+  astcenc_compute_variance.cpp
+  astcenc_decompress_symbolic.cpp
+  astcenc_diagnostic_trace.cpp
+  astcenc_entry.cpp
+  astcenc_find_best_partitioning.cpp
+  astcenc_ideal_endpoints_and_weights.cpp
+  astcenc_image.cpp
+  astcenc_integer_sequence.cpp
+  astcenc_mathlib.cpp
+  astcenc_mathlib_softfloat.cpp
+  astcenc_partition_tables.cpp
+  astcenc_percentile_tables.cpp
+  astcenc_pick_best_endpoint_format.cpp
+  astcenc_quantization.cpp
+  astcenc_symbolic_physical.cpp
+  Generating Code...
+  Compiling...
+  astcenc_weight_align.cpp
+  astcenc_weight_quant_xfer_tables.cpp
+  Generating Code...
+  astcenc-avx2-static.vcxproj -> C:\main\port\graphics3d\ktx\external\astc-encoder\Source\Debug\astcenc-avx2-static.lib

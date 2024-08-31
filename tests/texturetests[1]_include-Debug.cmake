@@ -2,7 +2,7 @@ if(EXISTS "C:/main/port/graphics3d/ktx/Debug/texturetests.exe")
   if(NOT EXISTS "C:/main/port/graphics3d/ktx/tests/texturetests[1]_tests-Debug.cmake" OR
      NOT "C:/main/port/graphics3d/ktx/tests/texturetests[1]_tests-Debug.cmake" IS_NEWER_THAN "C:/main/port/graphics3d/ktx/Debug/texturetests.exe" OR
      NOT "C:/main/port/graphics3d/ktx/tests/texturetests[1]_tests-Debug.cmake" IS_NEWER_THAN "${CMAKE_CURRENT_LIST_FILE}")
-    include("C:/Program Files/CMake/share/cmake-3.30/Modules/GoogleTestAddTests.cmake")
+    include("C:/Program Files/CMake/share/cmake-3.23/Modules/GoogleTestAddTests.cmake")
     gtest_discover_tests_impl(
       TEST_EXECUTABLE [==[C:/main/port/graphics3d/ktx/Debug/texturetests.exe]==]
       TEST_EXECUTOR [==[]==]

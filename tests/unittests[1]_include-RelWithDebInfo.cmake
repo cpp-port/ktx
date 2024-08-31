@@ -2,7 +2,7 @@ if(EXISTS "C:/main/port/graphics3d/ktx/RelWithDebInfo/unittests.exe")
   if(NOT EXISTS "C:/main/port/graphics3d/ktx/tests/unittests[1]_tests-RelWithDebInfo.cmake" OR
      NOT "C:/main/port/graphics3d/ktx/tests/unittests[1]_tests-RelWithDebInfo.cmake" IS_NEWER_THAN "C:/main/port/graphics3d/ktx/RelWithDebInfo/unittests.exe" OR
      NOT "C:/main/port/graphics3d/ktx/tests/unittests[1]_tests-RelWithDebInfo.cmake" IS_NEWER_THAN "${CMAKE_CURRENT_LIST_FILE}")
-    include("C:/Program Files/CMake/share/cmake-3.30/Modules/GoogleTestAddTests.cmake")
+    include("C:/Program Files/CMake/share/cmake-3.23/Modules/GoogleTestAddTests.cmake")
     gtest_discover_tests_impl(
       TEST_EXECUTABLE [==[C:/main/port/graphics3d/ktx/RelWithDebInfo/unittests.exe]==]
       TEST_EXECUTOR [==[]==]

@@ -86,27 +86,23 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CallingConvention>StdCall</CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;DEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -136,27 +132,22 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
@@ -186,27 +177,22 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
@@ -236,26 +222,21 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/main/port/graphics3d/ktx/KTX-Software/other_include" /external:I "C:/main/port/graphics3d/ktx/KTX-Software/external/fmt/include" /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\lib;C:\main\port\graphics3d\ktx\KTX-Software\tools;C:\main\port\graphics3d\ktx\KTX-Software\tools\imageio;C:\main\port\graphics3d\ktx\KTX-Software\tests\loadtests\common;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
@@ -296,7 +277,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\main\port\graphics3d\ktx\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tests/CMakeLists.txt</Message>
@@ -309,7 +290,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\main\port\graphics3d\ktx\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tests/CMakeLists.txt</Message>
@@ -322,7 +303,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\main\port\graphics3d\ktx\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/main/port/graphics3d/ktx/KTX-Software/tests/CMakeLists.txt</Message>
@@ -335,7 +316,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2check-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktx2ktx2-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\ktxsc-tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\tests.cmake;C:\main\port\graphics3d\ktx\KTX-Software\tests\toktx-tests.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\main\port\graphics3d\ktx\tests\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>

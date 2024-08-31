@@ -329,7 +329,6 @@
     <None Include="C:\main\port\graphics3d\ktx\KTX-Software\lib\internalexport_write.def">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="ktx.def" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">

@@ -95,16 +95,13 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp14</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;DEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -137,22 +134,18 @@
       <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\tests\streamtests\..\..\other_include;C:\main\port\graphics3d\ktx\KTX-Software\tests\streamtests\..\..\lib;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp14</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
@@ -185,22 +178,18 @@
       <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\tests\streamtests\..\..\other_include;C:\main\port\graphics3d\ktx\KTX-Software\tests\streamtests\..\..\lib;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp14</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
@@ -233,21 +222,17 @@
       <AdditionalIncludeDirectories>C:\main\port\graphics3d\ktx\KTX-Software\include;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\transcoder;C:\main\port\graphics3d\ktx\KTX-Software\external;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu\zstd;C:\main\port\graphics3d\ktx\KTX-Software\utils;C:\main\port\graphics3d\ktx\KTX-Software\other_include;C:\main\port\graphics3d\ktx\KTX-Software\external\dfdutils;C:\main\port\graphics3d\ktx\KTX-Software\external\basisu;C:\main\port\graphics3d\ktx\KTX-Software\external\astc-encoder\Source;C:\main\port\graphics3d\ktx\KTX-Software\tests\streamtests\..\..\other_include;C:\main\port\graphics3d\ktx\KTX-Software\tests\streamtests\..\..\lib;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\include;C:\main\port\graphics3d\ktx\KTX-Software\tests\gtest\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp14</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BASISU_NO_ITERATOR_DEBUG_LEVEL;KTX_FEATURE_KTX1;KTX_FEATURE_KTX2;KTX_FEATURE_WRITE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
