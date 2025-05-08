@@ -1,2 +1,0 @@
-C:/main/port/graphics3d/ktx/KTX-Software/lib/internalexport.def
-C:/main/port/graphics3d/ktx/KTX-Software/lib/internalexport_write.def
