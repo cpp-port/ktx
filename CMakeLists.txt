@@ -1,17 +1,24 @@
-
-
 project(graphics3d-KTX)
+
 
 cmake_minimum_required(VERSION 3.22)
 
-set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../time-windows/x64)
+set(GRAPHICS3D_KTX_SOURCE ${CMAKE_CURRENT_SOURCE_DIR})
 
 
-set(_CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../time-windows/x64)
-set(_CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../time-windows/x64)
-set(_CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../../time-windows/x64)
+message(STATUS "CMAKE_BINARY_DIR (1) ${CMAKE_BINARY_DIR}")
+
+
+set(CMAKE_BINARY_DIR ${GRAPHICS3D_KTX_SOURCE})
+
+
+set(EXECUTABLE_OUTPUT_PATH ${GRAPHICS3D_KTX_SOURCE}/../../../time-windows/x64)
+
+
+set(_CMAKE_RUNTIME_OUTPUT_DIRECTORY ${GRAPHICS3D_KTX_SOURCE}/../../../time-windows/x64)
+set(_CMAKE_LIBRARY_OUTPUT_DIRECTORY ${GRAPHICS3D_KTX_SOURCE}/../../../time-windows/x64)
+set(_CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${GRAPHICS3D_KTX_SOURCE}/../../../time-windows/x64)
 
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${_CMAKE_RUNTIME_OUTPUT_DIRECTORY})
@@ -22,7 +29,10 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${_CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
 add_subdirectory("KTX-Software")
 
 
-set_target_properties(ktx_js PROPERTIES EXCLUDE_FROM_ALL TRUE)
+set(CMAKE_BINARY_DIR ${GRAPHICS3D_KTX_SOURCE})
+
+
+message(STATUS "CMAKE_BINARY_DIR (2) ${CMAKE_BINARY_DIR}")
 
 
 list(APPEND target_items
@@ -45,6 +55,8 @@ list(APPEND target_items
     objUtil
 )
 
+
+
 foreach(target_item ${target_items})
 
     set_target_properties(${target_item} PROPERTIES
@@ -54,17 +66,6 @@ foreach(target_item ${target_items})
     )
 
 endforeach()
-
-
-
-
-
-
-
-
-
-
-
 
 
 
