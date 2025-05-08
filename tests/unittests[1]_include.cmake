@@ -1,1 +1,0 @@
-include("C:/main/port/graphics3d/ktx/tests/unittests[1]_include-${CTEST_CONFIGURATION_TYPE}.cmake")
