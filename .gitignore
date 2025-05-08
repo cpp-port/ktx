@@ -20,6 +20,8 @@ Makefile
 **/doxygen.directory
 **/Debug
 **/*.dir
+x64
+Win32
 .DS_Store
 ._.DS_Store
 *.suo
@@ -39,6 +41,7 @@ solution.vc.db*
 Thumbs.db
 _matter.zip
 Makefile
+tests
 _packages.txt
 application_build_helper_input.txt
 application_build_helper_output.txt
