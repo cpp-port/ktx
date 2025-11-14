@@ -1,0 +1,1 @@
+../KTX-Software/lib/include/ktxvulkan.h
