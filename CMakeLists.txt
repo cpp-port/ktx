@@ -26,26 +26,29 @@ cmake_minimum_required(VERSION 3.22)
 #set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${_CMAKE_LIBRARY_OUTPUT_DIRECTORY})
 #set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${_CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
 
+set(KTX_FEATURE_TESTS OFF CACHE BOOL "Disable KTX tests" FORCE)
 
 add_subdirectory("KTX-Software")
-#
-#
+
+
+##
+##
 #list(APPEND target_items
 #    ktx
 #    ktx_read
-#    ktx2check
-#    ktx2ktx2
-#    ktxinfo
-#    ktxsc
-#    ktxtools
+#    #ktx2check
+#    #ktx2ktx2
+#    #ktxinfo
+#    #ktxsc
+#    #ktxtools
 #    streamtests
-#    streamtests
-#    toktx
+#    #streamtests
+#    #toktx
 #    transcodetests
 #    unittests
 #    fmt
 #    gtest
-#    imageio
+#    #imageio
 #    obj_basisu_cbind
 #    objUtil
 #)
@@ -54,11 +57,14 @@ add_subdirectory("KTX-Software")
 #
 #foreach(target_item ${target_items})
 #
-#    set_target_properties(${target_item} PROPERTIES
-#    RUNTIME_OUTPUT_DIRECTORY ${_CMAKE_RUNTIME_OUTPUT_DIRECTORY}
-#    LIBRARY_OUTPUT_DIRECTORY ${_CMAKE_LIBRARY_OUTPUT_DIRECTORY}
-#    ARCHIVE_OUTPUT_DIRECTORY ${_CMAKE_ARCHIVE_OUTPUT_DIRECTORY}
-#    )
+#    #set_target_properties(${target_item} PROPERTIES
+#    #RUNTIME_OUTPUT_DIRECTORY ${_CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+#    #LIBRARY_OUTPUT_DIRECTORY ${_CMAKE_LIBRARY_OUTPUT_DIRECTORY}
+#    #ARCHIVE_OUTPUT_DIRECTORY ${_CMAKE_ARCHIVE_OUTPUT_DIRECTORY}
+#    #)
+#
+#    set_property(TARGET ${target_item}  PROPERTY CXX_STANDARD 17)
+#    set_property(TARGET ${target_item}  PROPERTY CXX_STANDARD_REQUIRED ON)
 #
 #endforeach()
 #
