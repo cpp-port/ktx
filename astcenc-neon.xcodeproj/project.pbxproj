@@ -6,6 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A4CC80E2F23685200D9A73A /* astcenc_mathlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6752F235D5200D9A73A /* astcenc_mathlib.cpp */; };
+		9A4CC80F2F23685200D9A73A /* astcenc_diagnostic_trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66F2F235D5200D9A73A /* astcenc_diagnostic_trace.cpp */; };
+		9A4CC8102F23685200D9A73A /* astcenc_decompress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66E2F235D5200D9A73A /* astcenc_decompress_symbolic.cpp */; };
+		9A4CC8112F23685200D9A73A /* astcenc_averages_and_directions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6682F235D5200D9A73A /* astcenc_averages_and_directions.cpp */; };
+		9A4CC8122F23685200D9A73A /* astcenc_weight_quant_xfer_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC67E2F235D5200D9A73A /* astcenc_weight_quant_xfer_tables.cpp */; };
+		9A4CC8132F23685200D9A73A /* astcenc_ideal_endpoints_and_weights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6722F235D5200D9A73A /* astcenc_ideal_endpoints_and_weights.cpp */; };
+		9A4CC8152F23685200D9A73A /* astcenc_symbolic_physical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC67C2F235D5200D9A73A /* astcenc_symbolic_physical.cpp */; };
+		9A4CC8162F23685200D9A73A /* astcenc_color_unquantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66B2F235D5200D9A73A /* astcenc_color_unquantize.cpp */; };
+		9A4CC8172F23685200D9A73A /* astcenc_entry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6702F235D5200D9A73A /* astcenc_entry.cpp */; };
+		9A4CC8182F23685200D9A73A /* astcenc_quantization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC67B2F235D5200D9A73A /* astcenc_quantization.cpp */; };
+		9A4CC8192F23685200D9A73A /* astcenc_weight_align.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC67D2F235D5200D9A73A /* astcenc_weight_align.cpp */; };
+		9A4CC81A2F23685200D9A73A /* astcenc_integer_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6742F235D5200D9A73A /* astcenc_integer_sequence.cpp */; };
+		9A4CC81B2F23685200D9A73A /* astcenc_find_best_partitioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6712F235D5200D9A73A /* astcenc_find_best_partitioning.cpp */; };
+		9A4CC81C2F23685200D9A73A /* astcenc_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6732F235D5200D9A73A /* astcenc_image.cpp */; };
+		9A4CC81E2F23685200D9A73A /* astcenc_block_sizes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6692F235D5200D9A73A /* astcenc_block_sizes.cpp */; };
+		9A4CC81F2F23685200D9A73A /* astcenc_platform_isa_detection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC67A2F235D5200D9A73A /* astcenc_platform_isa_detection.cpp */; };
+		9A4CC8212F23685200D9A73A /* astcenc_color_quantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66A2F235D5200D9A73A /* astcenc_color_quantize.cpp */; };
+		9A4CC8232F23685200D9A73A /* astcenc_pick_best_endpoint_format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6792F235D5200D9A73A /* astcenc_pick_best_endpoint_format.cpp */; };
+		9A4CC8252F23685200D9A73A /* astcenc_partition_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6772F235D5200D9A73A /* astcenc_partition_tables.cpp */; };
+		9A4CC8262F23685200D9A73A /* astcenc_percentile_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6782F235D5200D9A73A /* astcenc_percentile_tables.cpp */; };
+		9A4CC8272F23685200D9A73A /* wuffs-v0.3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6882F235D5200D9A73A /* wuffs-v0.3.c */; };
+		9A4CC8282F23685200D9A73A /* astcenc_compute_variance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66D2F235D5200D9A73A /* astcenc_compute_variance.cpp */; };
+		9A4CC8292F23685200D9A73A /* astcenc_mathlib_softfloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6762F235D5200D9A73A /* astcenc_mathlib_softfloat.cpp */; };
+		9A4CC82A2F23685200D9A73A /* astcenc_compress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66C2F235D5200D9A73A /* astcenc_compress_symbolic.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9A4CC6682F235D5200D9A73A /* astcenc_averages_and_directions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_averages_and_directions.cpp; sourceTree = "<group>"; };
 		9A4CC6692F235D5200D9A73A /* astcenc_block_sizes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_block_sizes.cpp; sourceTree = "<group>"; };
@@ -30,17 +57,8 @@
 		9A4CC67C2F235D5200D9A73A /* astcenc_symbolic_physical.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_symbolic_physical.cpp; sourceTree = "<group>"; };
 		9A4CC67D2F235D5200D9A73A /* astcenc_weight_align.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_weight_align.cpp; sourceTree = "<group>"; };
 		9A4CC67E2F235D5200D9A73A /* astcenc_weight_quant_xfer_tables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_weight_quant_xfer_tables.cpp; sourceTree = "<group>"; };
-		9A4CC67F2F235D5200D9A73A /* astcenccli_entry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_entry.cpp; sourceTree = "<group>"; };
-		9A4CC6802F235D5200D9A73A /* astcenccli_entry2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_entry2.cpp; sourceTree = "<group>"; };
-		9A4CC6812F235D5200D9A73A /* astcenccli_error_metrics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_error_metrics.cpp; sourceTree = "<group>"; };
-		9A4CC6822F235D5200D9A73A /* astcenccli_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_image.cpp; sourceTree = "<group>"; };
-		9A4CC6832F235D5200D9A73A /* astcenccli_image_external.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_image_external.cpp; sourceTree = "<group>"; };
-		9A4CC6842F235D5200D9A73A /* astcenccli_image_load_store.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_image_load_store.cpp; sourceTree = "<group>"; };
-		9A4CC6852F235D5200D9A73A /* astcenccli_platform_dependents.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_platform_dependents.cpp; sourceTree = "<group>"; };
-		9A4CC6862F235D5200D9A73A /* astcenccli_toplevel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_toplevel.cpp; sourceTree = "<group>"; };
-		9A4CC6872F235D5200D9A73A /* astcenccli_toplevel_help.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenccli_toplevel_help.cpp; sourceTree = "<group>"; };
 		9A4CC6882F235D5200D9A73A /* wuffs-v0.3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wuffs-v0.3.c"; sourceTree = "<group>"; };
-		9A7E53102F235001000C3860 /* libastcenc-neon-static.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libastcenc-neon-static.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7E53102F235001000C3860 /* libastcenc-neon.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libastcenc-neon.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +98,6 @@
 				9A4CC67C2F235D5200D9A73A /* astcenc_symbolic_physical.cpp */,
 				9A4CC67D2F235D5200D9A73A /* astcenc_weight_align.cpp */,
 				9A4CC67E2F235D5200D9A73A /* astcenc_weight_quant_xfer_tables.cpp */,
-				9A4CC67F2F235D5200D9A73A /* astcenccli_entry.cpp */,
-				9A4CC6802F235D5200D9A73A /* astcenccli_entry2.cpp */,
-				9A4CC6812F235D5200D9A73A /* astcenccli_error_metrics.cpp */,
-				9A4CC6822F235D5200D9A73A /* astcenccli_image.cpp */,
-				9A4CC6832F235D5200D9A73A /* astcenccli_image_external.cpp */,
-				9A4CC6842F235D5200D9A73A /* astcenccli_image_load_store.cpp */,
-				9A4CC6852F235D5200D9A73A /* astcenccli_platform_dependents.cpp */,
-				9A4CC6862F235D5200D9A73A /* astcenccli_toplevel.cpp */,
-				9A4CC6872F235D5200D9A73A /* astcenccli_toplevel_help.cpp */,
 				9A4CC6882F235D5200D9A73A /* wuffs-v0.3.c */,
 			);
 			name = Source;
@@ -106,7 +115,7 @@
 		9A7E53112F235001000C3860 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A7E53102F235001000C3860 /* libastcenc-neon-static.dylib */,
+				9A7E53102F235001000C3860 /* libastcenc-neon.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +133,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9A7E530F2F235001000C3860 /* astcenc-neon-static */ = {
+		9A7E530F2F235001000C3860 /* astcenc-neon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A7E53142F235001000C3860 /* Build configuration list for PBXNativeTarget "astcenc-neon-static" */;
+			buildConfigurationList = 9A7E53142F235001000C3860 /* Build configuration list for PBXNativeTarget "astcenc-neon" */;
 			buildPhases = (
 				9A7E530C2F235001000C3860 /* Headers */,
 				9A7E530D2F235001000C3860 /* Sources */,
@@ -136,11 +145,11 @@
 			);
 			dependencies = (
 			);
-			name = "astcenc-neon-static";
+			name = "astcenc-neon";
 			packageProductDependencies = (
 			);
 			productName = "astcenv-neon-static";
-			productReference = 9A7E53102F235001000C3860 /* libastcenc-neon-static.dylib */;
+			productReference = 9A7E53102F235001000C3860 /* libastcenc-neon.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9A7E530B2F235001000C3860 /* Build configuration list for PBXProject "astcenc-neon-static" */;
+			buildConfigurationList = 9A7E530B2F235001000C3860 /* Build configuration list for PBXProject "astcenc-neon" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -171,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A7E530F2F235001000C3860 /* astcenc-neon-static */,
+				9A7E530F2F235001000C3860 /* astcenc-neon */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +190,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4CC80E2F23685200D9A73A /* astcenc_mathlib.cpp in Sources */,
+				9A4CC80F2F23685200D9A73A /* astcenc_diagnostic_trace.cpp in Sources */,
+				9A4CC8102F23685200D9A73A /* astcenc_decompress_symbolic.cpp in Sources */,
+				9A4CC8112F23685200D9A73A /* astcenc_averages_and_directions.cpp in Sources */,
+				9A4CC8122F23685200D9A73A /* astcenc_weight_quant_xfer_tables.cpp in Sources */,
+				9A4CC8132F23685200D9A73A /* astcenc_ideal_endpoints_and_weights.cpp in Sources */,
+				9A4CC8152F23685200D9A73A /* astcenc_symbolic_physical.cpp in Sources */,
+				9A4CC8162F23685200D9A73A /* astcenc_color_unquantize.cpp in Sources */,
+				9A4CC8172F23685200D9A73A /* astcenc_entry.cpp in Sources */,
+				9A4CC8182F23685200D9A73A /* astcenc_quantization.cpp in Sources */,
+				9A4CC8192F23685200D9A73A /* astcenc_weight_align.cpp in Sources */,
+				9A4CC81A2F23685200D9A73A /* astcenc_integer_sequence.cpp in Sources */,
+				9A4CC81B2F23685200D9A73A /* astcenc_find_best_partitioning.cpp in Sources */,
+				9A4CC81C2F23685200D9A73A /* astcenc_image.cpp in Sources */,
+				9A4CC81E2F23685200D9A73A /* astcenc_block_sizes.cpp in Sources */,
+				9A4CC81F2F23685200D9A73A /* astcenc_platform_isa_detection.cpp in Sources */,
+				9A4CC8212F23685200D9A73A /* astcenc_color_quantize.cpp in Sources */,
+				9A4CC8232F23685200D9A73A /* astcenc_pick_best_endpoint_format.cpp in Sources */,
+				9A4CC8252F23685200D9A73A /* astcenc_partition_tables.cpp in Sources */,
+				9A4CC8262F23685200D9A73A /* astcenc_percentile_tables.cpp in Sources */,
+				9A4CC8272F23685200D9A73A /* wuffs-v0.3.c in Sources */,
+				9A4CC8282F23685200D9A73A /* astcenc_compute_variance.cpp in Sources */,
+				9A4CC8292F23685200D9A73A /* astcenc_mathlib_softfloat.cpp in Sources */,
+				9A4CC82A2F23685200D9A73A /* astcenc_compress_symbolic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +437,7 @@
 				EXECUTABLE_PREFIX = lib;
 				MACH_O_TYPE = mh_dylib;
 				PLATFORM_MODIFIER = macos;
+				PRODUCT_NAME = "astcenc-neon";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
@@ -419,6 +453,7 @@
 				EXECUTABLE_PREFIX = lib;
 				MACH_O_TYPE = mh_dylib;
 				PLATFORM_MODIFIER = macos;
+				PRODUCT_NAME = "astcenc-neon";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
@@ -427,7 +462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A7E530B2F235001000C3860 /* Build configuration list for PBXProject "astcenc-neon-static" */ = {
+		9A7E530B2F235001000C3860 /* Build configuration list for PBXProject "astcenc-neon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A7E53122F235001000C3860 /* Debug */,
@@ -436,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A7E53142F235001000C3860 /* Build configuration list for PBXNativeTarget "astcenc-neon-static" */ = {
+		9A7E53142F235001000C3860 /* Build configuration list for PBXNativeTarget "astcenc-neon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A7E53152F235001000C3860 /* Debug */,
