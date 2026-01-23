@@ -188,6 +188,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A112C672F23749100360960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9A4CC6892F235D6500D9A73A /* encoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +432,10 @@
 				{
 					ProductGroup = 9A4CC8052F23683E00D9A73A /* Products */;
 					ProjectRef = 9A4CC8042F23683E00D9A73A /* astcenc-neon.xcodeproj */;
+				},
+				{
+					ProductGroup = 9A112C672F23749100360960 /* Products */;
+					ProjectRef = 9A4CC7322F23646900D9A73A /* astcenc-neon.xcodeproj */;
 				},
 				{
 					ProductGroup = 9A4CC70E2F23616400D9A73A /* Products */;
