@@ -138,6 +138,8 @@
 		9A4CC8672F236CDA00D9A73A /* texture2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = texture2.c; sourceTree = "<group>"; };
 		9A4CC86A2F236DD300D9A73A /* writer1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = writer1.c; sourceTree = "<group>"; };
 		9A4CC86B2F236DD300D9A73A /* writer2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = writer2.c; sourceTree = "<group>"; };
+		9A5A9D622F23D6AA00F3FA1F /* _____debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "_____debug.xcconfig"; sourceTree = "<group>"; };
+		9A5A9D632F23D6AA00F3FA1F /* _____release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "_____release.xcconfig"; sourceTree = "<group>"; };
 		9A6AFE222F23571B002B8B30 /* libktx.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libktx.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -256,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				9A4CC65D2F235C5900D9A73A /* basisu_encoder.xcodeproj */,
+				9A5A9D622F23D6AA00F3FA1F /* _____debug.xcconfig */,
+				9A5A9D632F23D6AA00F3FA1F /* _____release.xcconfig */,
 				9A4CC8552F2369D900D9A73A /* dfdutils */,
 				9A4CC8302F23698C00D9A73A /* etcdec */,
 				9A4CC61F2F2357E800D9A73A /* src */,
@@ -424,6 +428,7 @@
 /* Begin XCBuildConfiguration section */
 		9A6AFE242F23571B002B8B30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5A9D622F23D6AA00F3FA1F /* _____debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
@@ -535,6 +540,7 @@
 		};
 		9A6AFE252F23571B002B8B30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5A9D632F23D6AA00F3FA1F /* _____release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
