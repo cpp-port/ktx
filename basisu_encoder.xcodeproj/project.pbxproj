@@ -56,7 +56,6 @@
 		9A4CC6E92F235D9A00D9A73A /* basisu_frontend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC69B2F235D9500D9A73A /* basisu_frontend.cpp */; };
 		9A4CC6EA2F235D9A00D9A73A /* basisu_gpu_texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC69D2F235D9500D9A73A /* basisu_gpu_texture.cpp */; };
 		9A4CC6EB2F235D9A00D9A73A /* basisu_resample_filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6A82F235D9500D9A73A /* basisu_resample_filters.cpp */; };
-		9A4CC7312F23645A00D9A73A /* libtinyexr.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4CC7122F23616400D9A73A /* libtinyexr.dylib */; };
 		9A4CC74B2F23652F00D9A73A /* android_astc_decomp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC74A2F23652F00D9A73A /* android_astc_decomp.cpp */; };
 		9A4CC7622F2365C900D9A73A /* basisu_file_headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4CC7512F2365C900D9A73A /* basisu_file_headers.h */; };
 		9A4CC7632F2365C900D9A73A /* basisu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4CC74C2F2365C900D9A73A /* basisu.h */; };
@@ -67,44 +66,29 @@
 		9A4CC7682F2365C900D9A73A /* basisu_transcoder_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4CC7542F2365C900D9A73A /* basisu_transcoder_internal.h */; };
 		9A4CC7692F2365C900D9A73A /* basisu_transcoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4CC7522F2365C900D9A73A /* basisu_transcoder.h */; };
 		9A4CC76B2F2365C900D9A73A /* basisu_transcoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC7532F2365C900D9A73A /* basisu_transcoder.cpp */; };
-		9A4CC7822F23662900D9A73A /* libzstd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4CC77C2F2365FC00D9A73A /* libzstd.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9A4CC7112F23616400D9A73A /* PBXContainerItemProxy */ = {
+		9AAC581C2F490EB80095CC0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9A4CC70D2F23616400D9A73A /* tinyexr.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A4CC6F52F235FE800D9A73A;
-			remoteInfo = tinyexr;
-		};
-		9A4CC7192F23617A00D9A73A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A4CC70D2F23616400D9A73A /* tinyexr.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A4CC6F42F235FE800D9A73A;
-			remoteInfo = tinyexr;
-		};
-		9A4CC77B2F2365FC00D9A73A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A4CC7752F2365FC00D9A73A /* zstd.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A1396CE2F234F2400C00FBD;
-			remoteInfo = zstd;
-		};
-		9A4CC77D2F23661500D9A73A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A4CC7752F2365FC00D9A73A /* zstd.xcodeproj */;
+			containerPortal = 9AAC578B2F490E900095CC0F /* zstd.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 9A1396CD2F234F2400C00FBD;
 			remoteInfo = zstd;
 		};
-		9A4CC8072F23683E00D9A73A /* PBXContainerItemProxy */ = {
+		9AAC58AF2F490EFA0095CC0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9A4CC8042F23683E00D9A73A /* astcenc-neon.xcodeproj */;
+			containerPortal = 9A4CC7322F23646900D9A73A /* astcenc-neon.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 9A7E530F2F235001000C3860;
 			remoteInfo = "astcenc-neon";
+		};
+		9AAC58B12F490EFA0095CC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AAC581E2F490ED20095CC0F /* tinyexr.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4CC6F42F235FE800D9A73A;
+			remoteInfo = tinyexr;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -158,8 +142,7 @@
 		9A4CC6B82F235D9500D9A73A /* jpgd.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jpgd.cpp; sourceTree = "<group>"; };
 		9A4CC6B92F235D9500D9A73A /* pvpngreader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pvpngreader.h; sourceTree = "<group>"; };
 		9A4CC6BA2F235D9500D9A73A /* pvpngreader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pvpngreader.cpp; sourceTree = "<group>"; };
-		9A4CC70D2F23616400D9A73A /* tinyexr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tinyexr.xcodeproj; path = /Volumes/hstorage/Users/camilo/SceneFoundry/main/port/imaging/tinyexr/tinyexr.xcodeproj; sourceTree = "<absolute>"; };
-		9A4CC7322F23646900D9A73A /* astcenc-neon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "astcenc-neon.xcodeproj"; sourceTree = "<group>"; };
+		9A4CC7322F23646900D9A73A /* astcenc-neon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "astcenc-neon.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		9A4CC74A2F23652F00D9A73A /* android_astc_decomp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = android_astc_decomp.cpp; path = "KTX-Software/external/basis_universal/encoder/3rdparty/android_astc_decomp.cpp"; sourceTree = SOURCE_ROOT; };
 		9A4CC74C2F2365C900D9A73A /* basisu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basisu.h; sourceTree = "<group>"; };
 		9A4CC74D2F2365C900D9A73A /* basisu_astc_hdr_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basisu_astc_hdr_core.h; sourceTree = "<group>"; };
@@ -170,9 +153,9 @@
 		9A4CC7522F2365C900D9A73A /* basisu_transcoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basisu_transcoder.h; sourceTree = "<group>"; };
 		9A4CC7532F2365C900D9A73A /* basisu_transcoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basisu_transcoder.cpp; sourceTree = "<group>"; };
 		9A4CC7542F2365C900D9A73A /* basisu_transcoder_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basisu_transcoder_internal.h; sourceTree = "<group>"; };
-		9A4CC7752F2365FC00D9A73A /* zstd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zstd.xcodeproj; path = /Volumes/hstorage/Users/camilo/SceneFoundry/main/port/base/zstd/zstd.xcodeproj; sourceTree = "<absolute>"; };
-		9A4CC8042F23683E00D9A73A /* astcenc-neon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "astcenc-neon.xcodeproj"; path = "/Volumes/hstorage/Users/camilo/SceneFoundry/main/port/graphics3d/ktx/astcenc-neon.xcodeproj"; sourceTree = "<absolute>"; };
 		9A7E53282F235059000C3860 /* libbasisu_encoder.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libbasisu_encoder.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAC578B2F490E900095CC0F /* zstd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zstd.xcodeproj; path = ../../base/zstd/zstd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		9AAC581E2F490ED20095CC0F /* tinyexr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tinyexr.xcodeproj; path = ../../imaging/tinyexr/tinyexr.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,21 +163,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4CC7822F23662900D9A73A /* libzstd.dylib in Frameworks */,
-				9A4CC7312F23645A00D9A73A /* libtinyexr.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9A112C672F23749100360960 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9A4CC6892F235D6500D9A73A /* encoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,14 +227,6 @@
 			path = "KTX-Software/external/basis_universal/encoder";
 			sourceTree = "<group>";
 		};
-		9A4CC70E2F23616400D9A73A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9A4CC7122F23616400D9A73A /* libtinyexr.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9A4CC7302F23645A00D9A73A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,32 +259,16 @@
 			path = "KTX-Software/external/basis_universal/transcoder";
 			sourceTree = "<group>";
 		};
-		9A4CC7782F2365FC00D9A73A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9A4CC77C2F2365FC00D9A73A /* libzstd.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9A4CC8052F23683E00D9A73A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9A7E531F2F235059000C3860 = {
 			isa = PBXGroup;
 			children = (
 				9A4CC7322F23646900D9A73A /* astcenc-neon.xcodeproj */,
-				9A4CC70D2F23616400D9A73A /* tinyexr.xcodeproj */,
-				9A4CC7752F2365FC00D9A73A /* zstd.xcodeproj */,
+				9AAC581E2F490ED20095CC0F /* tinyexr.xcodeproj */,
+				9AAC578B2F490E900095CC0F /* zstd.xcodeproj */,
 				9A4CC6892F235D6500D9A73A /* encoder */,
 				9A4CC7602F2365C900D9A73A /* transcoder */,
 				9A4CC7302F23645A00D9A73A /* Frameworks */,
 				9A7E53292F235059000C3860 /* Products */,
-				9A4CC8042F23683E00D9A73A /* astcenc-neon.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,6 +276,27 @@
 			isa = PBXGroup;
 			children = (
 				9A7E53282F235059000C3860 /* libbasisu_encoder.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AAC58142F490EA10095CC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AAC58A32F490EF00095CC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AAC58AA2F490EF00095CC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,9 +362,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				9A4CC8082F23683E00D9A73A /* PBXTargetDependency */,
-				9A4CC77E2F23661500D9A73A /* PBXTargetDependency */,
-				9A4CC71A2F23617A00D9A73A /* PBXTargetDependency */,
+				9AAC58B02F490EFA0095CC0F /* PBXTargetDependency */,
+				9AAC58B22F490EFA0095CC0F /* PBXTargetDependency */,
+				9AAC581D2F490EB80095CC0F /* PBXTargetDependency */,
 			);
 			name = basisu_encoder;
 			packageProductDependencies = (
@@ -430,20 +401,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9A4CC8052F23683E00D9A73A /* Products */;
-					ProjectRef = 9A4CC8042F23683E00D9A73A /* astcenc-neon.xcodeproj */;
-				},
-				{
-					ProductGroup = 9A112C672F23749100360960 /* Products */;
+					ProductGroup = 9AAC58A32F490EF00095CC0F /* Products */;
 					ProjectRef = 9A4CC7322F23646900D9A73A /* astcenc-neon.xcodeproj */;
 				},
 				{
-					ProductGroup = 9A4CC70E2F23616400D9A73A /* Products */;
-					ProjectRef = 9A4CC70D2F23616400D9A73A /* tinyexr.xcodeproj */;
+					ProductGroup = 9AAC58AA2F490EF00095CC0F /* Products */;
+					ProjectRef = 9AAC581E2F490ED20095CC0F /* tinyexr.xcodeproj */;
 				},
 				{
-					ProductGroup = 9A4CC7782F2365FC00D9A73A /* Products */;
-					ProjectRef = 9A4CC7752F2365FC00D9A73A /* zstd.xcodeproj */;
+					ProductGroup = 9AAC58142F490EA10095CC0F /* Products */;
+					ProjectRef = 9AAC578B2F490E900095CC0F /* zstd.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -452,23 +419,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9A4CC7122F23616400D9A73A /* libtinyexr.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libtinyexr.dylib;
-			remoteRef = 9A4CC7112F23616400D9A73A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9A4CC77C2F2365FC00D9A73A /* libzstd.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libzstd.dylib;
-			remoteRef = 9A4CC77B2F2365FC00D9A73A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A7E53252F235059000C3860 /* Sources */ = {
@@ -503,20 +453,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9A4CC71A2F23617A00D9A73A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = tinyexr;
-			targetProxy = 9A4CC7192F23617A00D9A73A /* PBXContainerItemProxy */;
-		};
-		9A4CC77E2F23661500D9A73A /* PBXTargetDependency */ = {
+		9AAC581D2F490EB80095CC0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = zstd;
-			targetProxy = 9A4CC77D2F23661500D9A73A /* PBXContainerItemProxy */;
+			targetProxy = 9AAC581C2F490EB80095CC0F /* PBXContainerItemProxy */;
 		};
-		9A4CC8082F23683E00D9A73A /* PBXTargetDependency */ = {
+		9AAC58B02F490EFA0095CC0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "astcenc-neon";
-			targetProxy = 9A4CC8072F23683E00D9A73A /* PBXContainerItemProxy */;
+			targetProxy = 9AAC58AF2F490EFA0095CC0F /* PBXContainerItemProxy */;
+		};
+		9AAC58B22F490EFA0095CC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tinyexr;
+			targetProxy = 9AAC58B12F490EFA0095CC0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -1,1 +1,1 @@
-../../KTX-Software/lib/include/KHR/khr_df.h
+../../KTX-Software/external/dfdutils/KHR/khr_df.h
