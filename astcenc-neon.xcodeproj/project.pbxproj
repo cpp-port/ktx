@@ -27,7 +27,6 @@
 		9A4CC8232F23685200D9A73A /* astcenc_pick_best_endpoint_format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6792F235D5200D9A73A /* astcenc_pick_best_endpoint_format.cpp */; };
 		9A4CC8252F23685200D9A73A /* astcenc_partition_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6772F235D5200D9A73A /* astcenc_partition_tables.cpp */; };
 		9A4CC8262F23685200D9A73A /* astcenc_percentile_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6782F235D5200D9A73A /* astcenc_percentile_tables.cpp */; };
-		9A4CC8272F23685200D9A73A /* wuffs-v0.3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6882F235D5200D9A73A /* wuffs-v0.3.c */; };
 		9A4CC8282F23685200D9A73A /* astcenc_compute_variance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66D2F235D5200D9A73A /* astcenc_compute_variance.cpp */; };
 		9A4CC8292F23685200D9A73A /* astcenc_mathlib_softfloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC6762F235D5200D9A73A /* astcenc_mathlib_softfloat.cpp */; };
 		9A4CC82A2F23685200D9A73A /* astcenc_compress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4CC66C2F235D5200D9A73A /* astcenc_compress_symbolic.cpp */; };
@@ -59,7 +58,6 @@
 		9A4CC67C2F235D5200D9A73A /* astcenc_symbolic_physical.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_symbolic_physical.cpp; sourceTree = "<group>"; };
 		9A4CC67D2F235D5200D9A73A /* astcenc_weight_align.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_weight_align.cpp; sourceTree = "<group>"; };
 		9A4CC67E2F235D5200D9A73A /* astcenc_weight_quant_xfer_tables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = astcenc_weight_quant_xfer_tables.cpp; sourceTree = "<group>"; };
-		9A4CC6882F235D5200D9A73A /* wuffs-v0.3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wuffs-v0.3.c"; sourceTree = "<group>"; };
 		9A7E53102F235001000C3860 /* libastcenc-neon.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libastcenc-neon.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,7 +98,6 @@
 				9A4CC67C2F235D5200D9A73A /* astcenc_symbolic_physical.cpp */,
 				9A4CC67D2F235D5200D9A73A /* astcenc_weight_align.cpp */,
 				9A4CC67E2F235D5200D9A73A /* astcenc_weight_quant_xfer_tables.cpp */,
-				9A4CC6882F235D5200D9A73A /* wuffs-v0.3.c */,
 			);
 			name = Source;
 			path = "KTX-Software/external/astc-encoder/Source";
@@ -214,7 +211,6 @@
 				9A4CC8232F23685200D9A73A /* astcenc_pick_best_endpoint_format.cpp in Sources */,
 				9A4CC8252F23685200D9A73A /* astcenc_partition_tables.cpp in Sources */,
 				9A4CC8262F23685200D9A73A /* astcenc_percentile_tables.cpp in Sources */,
-				9A4CC8272F23685200D9A73A /* wuffs-v0.3.c in Sources */,
 				9A4CC8282F23685200D9A73A /* astcenc_compute_variance.cpp in Sources */,
 				9A4CC8292F23685200D9A73A /* astcenc_mathlib_softfloat.cpp in Sources */,
 				9A4CC82A2F23685200D9A73A /* astcenc_compress_symbolic.cpp in Sources */,
