@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32"><Configuration>Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64"><Configuration>Debug</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64"><Configuration>Release</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="StaticDebug|Win32"><Configuration>StaticDebug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="StaticDebug|x64"><Configuration>StaticDebug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="StaticDebug|ARM64"><Configuration>StaticDebug</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="StaticRelease|Win32"><Configuration>StaticRelease</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="StaticRelease|x64"><Configuration>StaticRelease</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="StaticRelease|ARM64"><Configuration>StaticRelease</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="DebugAsan|Win32"><Configuration>DebugAsan</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="DebugAsan|x64"><Configuration>DebugAsan</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="DebugAsan|ARM64"><Configuration>DebugAsan</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="ASanStaticDebug|Win32"><Configuration>ASanStaticDebug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="ASanStaticDebug|x64"><Configuration>ASanStaticDebug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="ASanStaticDebug|ARM64"><Configuration>ASanStaticDebug</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{277D1BA2-2E1B-48D6-A08C-8ECFF6326507}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>ktx</RootNamespace>
+    <ProjectName>ktx</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <KtxCMake Condition="'$(KtxCMake)'==''">cmake</KtxCMake>
+    <KtxGenerator Condition="'$(KtxGenerator)'==''">Visual Studio 18 2026</KtxGenerator>
+    <KtxConfiguration>Debug</KtxConfiguration>
+    <KtxConfiguration Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='StaticRelease'">Release</KtxConfiguration>
+    <KtxShared>ON</KtxShared>
+    <KtxShared Condition="'$(Configuration)'=='StaticDebug' Or '$(Configuration)'=='StaticRelease' Or '$(Configuration)'=='ASanStaticDebug'">OFF</KtxShared>
+    <KtxRuntime>MultiThreadedDLL</KtxRuntime>
+    <KtxRuntime Condition="'$(KtxConfiguration)'=='Debug'">MultiThreadedDebugDLL</KtxRuntime>
+    <KtxRuntime Condition="'$(KtxShared)'=='OFF' And '$(KtxConfiguration)'=='Debug'">MultiThreadedDebug</KtxRuntime>
+    <KtxRuntime Condition="'$(KtxShared)'=='OFF' And '$(KtxConfiguration)'=='Release'">MultiThreaded</KtxRuntime>
+    <KtxAsan Condition="'$(Configuration)'=='DebugAsan' Or '$(Configuration)'=='ASanStaticDebug'">ON</KtxAsan>
+    <KtxBuildDir>$(ProjectDir)cmake-build-windows\$(Platform)\$(Configuration)</KtxBuildDir>
+    <KtxOutputDirectory Condition="'$(KtxOutputDirectory)'=='' And Exists('$(SolutionPath)')">$(SolutionDir)..\..\operating_system\storage-windows\$(Platform)\$(Configuration)\third</KtxOutputDirectory>
+    <KtxOutputDirectory Condition="'$(KtxOutputDirectory)'==''">$(ProjectDir)..\..\..\..\operating_system\storage-windows\$(Platform)\$(Configuration)\third</KtxOutputDirectory>
+    <OutDir>$(KtxOutputDirectory)\binary\</OutDir>
+    <IntDir>$(KtxBuildDir)\</IntDir>
+    <NMakeOutput>$(OutDir)ktx.dll</NMakeOutput>
+    <NMakeOutput Condition="'$(KtxShared)'=='OFF'">$(KtxOutputDirectory)\library\ktx.lib</NMakeOutput>
+    <KtxConfigureCommand>"$(KtxCMake)" -S "$(ProjectDir)windows" -B "$(KtxBuildDir)" -G "$(KtxGenerator)" -A $(Platform) -T $(PlatformToolset) "-DBUILD_SHARED_LIBS=$(KtxShared)" "-DCMAKE_MSVC_RUNTIME_LIBRARY=$(KtxRuntime)" "-DKTX_OUTPUT_DIRECTORY=$(KtxOutputDirectory)" "-DKTX_WINDOWS_ASAN=$(KtxAsan)"</KtxConfigureCommand>
+    <NMakeBuildCommandLine>$(KtxConfigureCommand)
+if errorlevel 1 exit /b 1
+"$(KtxCMake)" --build "$(KtxBuildDir)" --config $(KtxConfiguration) --target ktx_wrapper --parallel</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(KtxConfigureCommand)
+if errorlevel 1 exit /b 1
+"$(KtxCMake)" --build "$(KtxBuildDir)" --config $(KtxConfiguration) --target ktx_wrapper --clean-first --parallel</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>if exist "$(KtxBuildDir)\CMakeCache.txt" "$(KtxCMake)" --build "$(KtxBuildDir)" --config $(KtxConfiguration) --target clean</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>$(ProjectDir)KTX-Software\include;$(ProjectDir)KTX-Software\lib\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakePreprocessorDefinitions>WIN32;_WINDOWS;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='Win32'">
+    <!-- Upstream libktx explicitly rejects x86. Keep solution mappings visible. -->
+    <NMakeBuildCommandLine>echo KTX-Software does not support Win32 x86. Select x64 or ARM64.
+exit /b 1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(NMakeBuildCommandLine)</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo No Win32 KTX build to clean.</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="CMakeLists.txt" />
+    <None Include="windows\CMakeLists.txt" />
+    <None Include="windows\README.md" />
+    <ClInclude Include="KTX-Software\include\ktx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
