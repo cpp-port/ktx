@@ -23,3 +23,5 @@ Override `KtxOutputDirectory` to choose a different third-party output directory
 `KtxCMake` and `KtxGenerator` can also be overridden as MSBuild properties;
 `PlatformToolset` defaults to v145. No generated upstream projects need to be
 checked in, and the vendored KTX-Software sources remain unchanged.
+
+The wrapper also detects Visual Studio's bundled CMake when it is not on PATH. When invoked by the application build helper, its isolated staging output is honored through StoragePortImportLibrary and OutDir.
