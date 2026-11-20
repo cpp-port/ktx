@@ -48,7 +48,7 @@
     <KtxAsan Condition="'$(Configuration)'=='DebugAsan' Or '$(Configuration)'=='ASanStaticDebug'">ON</KtxAsan>
     <KtxBuildDir>$(ProjectDir)cmake-build-windows\$(Platform)\$(Configuration)</KtxBuildDir>
     <!-- The build helper stages dependencies in an isolated output root. -->
-    <KtxOutputDirectory Condition="'$(KtxOutputDirectory)'=='' And '$(StoragePortImportLibrary)'!=''">$(OutDir)..\</KtxOutputDirectory>
+    <KtxOutputDirectory Condition="'$(KtxOutputDirectory)'=='' And '$(StoragePortImportLibrary)'!=''">$([MSBuild]::NormalizePath('$(OutDir)', '..'))</KtxOutputDirectory>
     <KtxOutputDirectory Condition="'$(KtxOutputDirectory)'=='' And Exists('$(SolutionPath)')">$(SolutionDir)..\..\operating_system\storage-windows\$(Platform)\$(Configuration)\third</KtxOutputDirectory>
     <KtxOutputDirectory Condition="'$(KtxOutputDirectory)'==''">$(ProjectDir)..\..\..\..\operating_system\storage-windows\$(Platform)\$(Configuration)\third</KtxOutputDirectory>
     <OutDir>$(KtxOutputDirectory)\binary\</OutDir>
